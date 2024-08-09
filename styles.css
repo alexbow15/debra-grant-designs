@@ -341,11 +341,10 @@ textarea:focus {
   .about-me-container {
     margin: 10% 5% 0%;
     align-items: center;
-
   }
 
   .portrait-container {
-    border: solid red;
+    border: solid blue;
   }
 
   .portrait {
@@ -369,6 +368,25 @@ textarea:focus {
 
   .contact-form {
     font-size: 14px;
-    width: 80%;
+    margin: 0 5%;
+  }
+
+  .form-row {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .form-group {
+    margin-right: 0;
+  }
+
+  #submit {
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  .button-div {
+    padding-top: 10px;
   }
 }
+
