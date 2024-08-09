@@ -1,0 +1,307 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 1000;
+  background-color: black;
+  color: rgb(198, 196, 196);
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#navbar ul li {
+  margin: 10px;
+}
+
+#navbar ul li a {
+  color: rgb(198, 196, 196);
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: white !important;
+}
+
+#navbar ul li a:visited {
+  color: rgb(198, 196, 196);
+}
+
+.padding {
+  margin-top: 50px;
+}
+
+/* Homepage */
+
+.homepage-header {
+  font-size: 40px;
+  margin: 0;
+}
+
+.homepage-slogan {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.slideshow-container {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  margin: 0 100px;
+}
+
+.slides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transform: translateX(100%);
+}
+
+.slides.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slides.previous {
+  transform: translateX(-100%);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.dark-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.contact-link {
+  color: white;
+  border: solid 1px white;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.contact-link:hover {
+  color: black;
+  background-color: white;
+  text-shadow: none;
+}
+
+/* Debra */
+.about-me-container {
+  display: flex;
+  align-items: center;
+  margin: 7% 18%;
+  height: auto;
+}
+
+.about-me-text {
+  margin-left: 75px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.portrait {
+  height: 500px;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+.contact-container {
+  display: flex;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-text,
+.contact-form-container {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  box-sizing: border-box;
+  padding: 50px 0;
+}
+
+.contact-text p {
+  margin: 20px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  display: flex;
+  height: auto;
+}
+
+/* Quick Links */
+.quick-links-header,
+.contact-form-header {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  margin: 0;
+}
+
+.contact-text a {
+  color: black;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.contact-container a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  margin: 0 10%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid black;
+  color: black;
+  outline: none;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 2px solid black;
+}
+
+.form-group:last-of-type {
+  padding-bottom: 5px;
+}
+
+#submit {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 5px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 150px;
+  justify-content: center;
+  margin: 0 75px;
+}
+
+#submit:hover {
+  background-color: black;
+  color: white;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+/* Gallery's */
+.gallery-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  padding: 5px 0;
+  height: 100px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
