@@ -315,6 +315,10 @@ textarea:focus {
     margin: 0;
   }
 
+  #navbar ul li {
+    margin: 0;
+  }
+
   #navbar ul li a {
     font-size: 12px;
     padding: 0;
@@ -341,14 +345,11 @@ textarea:focus {
   .about-me-container {
     margin: 10% 5% 0%;
     align-items: center;
-  }
-
-  .portrait-container {
-    border: solid blue;
+    flex-direction: column;
   }
 
   .portrait {
-    height: 200px;
+    height: 400px;
   }
 
   .about-me-text {
@@ -373,11 +374,12 @@ textarea:focus {
 
   .form-row {
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .form-group {
     margin-right: 0;
+    margin-bottom: 10px;
   }
 
   #submit {
@@ -389,4 +391,3 @@ textarea:focus {
     padding-top: 10px;
   }
 }
-
