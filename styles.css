@@ -344,11 +344,11 @@ textarea:focus {
   }
 
   .portrait-container {
-    border: solid red;
+    border: solid blue;
   }
 
   .portrait {
-    height: 350px;
+    height: 200px;
   }
 
   .about-me-text {
