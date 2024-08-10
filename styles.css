@@ -53,7 +53,7 @@ body {
 .homepage-header {
   font-size: 50px;
   margin: 0;
-  width: 400px;
+  width: 600px;
 }
 
 .homepage-slogan {
@@ -63,9 +63,9 @@ body {
 
 .slideshow-container {
   position: relative;
-  height: 700px;
+  height: 100vh;
   overflow: hidden;
-  margin: 0 100px;
+  /*margin: 0 100px;*/
 }
 
 .slides {
@@ -109,7 +109,7 @@ body {
 
 .overlay {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -136,15 +136,15 @@ body {
 /* Debra */
 .about-me-container {
   display: flex;
-  align-items: flex-start;
-  margin: 7% 18% 3%;
+  align-items: center;
+  margin: 7% 18% 5%;
   height: auto;
+  max-width: 900px;
 }
 
 .about-me-text {
   margin-left: 75px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 600px;
 }
 
 .portrait {
@@ -155,7 +155,8 @@ body {
 .contact-container {
   display: flex;
   height: auto;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 18%;
+  max-width: 900px;
 }
 
 .contact-text,
@@ -182,6 +183,11 @@ body {
   align-items: center;
   padding: 0;
   margin-bottom: 30px;
+  margin-top: -50px;
+}
+
+.contact-container {
+  padding-top: -100px;
 }
 
 .header {
@@ -345,13 +351,17 @@ textarea:focus {
     top: 30%;
   }
 
+  .contact-form-container {
+    padding-top: 100px;
+  }
+
   .contact-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
   }
 
   .about-me-container {
-    margin: 15% 5% 0%;
+    margin: 75px 5% 0%;
     align-items: center;
     flex-direction: column;
   }
