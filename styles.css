@@ -316,7 +316,7 @@ textarea:focus {
   }
 
   #navbar ul li {
-    margin: 0;
+    margin: 5px;
   }
 
   #navbar ul li a {
@@ -326,7 +326,7 @@ textarea:focus {
 
   .slideshow-container {
     margin: 0;
-    height: 450px;
+    height: 550px;
   }
 
   .homepage-header {
@@ -349,7 +349,7 @@ textarea:focus {
   }
 
   .portrait {
-    height: 400px;
+    height: 350px;
   }
 
   .about-me-text {
