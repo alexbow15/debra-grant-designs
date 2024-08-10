@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -16,6 +22,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 20px;
+  box-sizing: border-box;
 }
 
 #navbar ul {
@@ -24,7 +31,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  width: 100%;
 }
 
 #navbar ul li {
@@ -46,6 +53,7 @@ body {
 
 .padding {
   margin-top: 50px;
+  width: 100%;
 }
 
 /* Homepage */
@@ -384,6 +392,7 @@ textarea:focus {
   }
 
   #navbar ul li {
+    text-align: center;
     margin: 5px;
   }
 
@@ -468,5 +477,9 @@ textarea:focus {
 
   .button-div {
     padding-top: 10px;
+  }
+
+  .footer-nav {
+    display: none;
   }
 }

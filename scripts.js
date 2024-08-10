@@ -18,12 +18,3 @@ function showSlides() {
   }
   setTimeout(showSlides, 4000); // Change image every 3 seconds
 }
-
-function toggleMenu() {
-  var navItems = document.getElementById("nav-items");
-  if (navItems.classList.contains("show")) {
-    navItems.classList.remove("show");
-  } else {
-    navItems.classList.add("show");
-  }
-}
