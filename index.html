@@ -2,80 +2,210 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Debra Grant Designs</title>
+    <title>Alex Bow Portfolio Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="Alex Bow's portfolio showcasing projects and skills in data analysis, web development, and fintech.">
+    <meta name="keywords" content="portfolio, web development, data analysis, fintech, React, Flask, Python">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        AOS.init();
+      });
+    </script>
   </head>
   <body>
     <nav id="navbar">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="debra/debra.html">Debra Grant</a></li>
-        <li><a href="baths/baths.html">Baths</a></li>
-        <li><a href="kitchens/kitchens.html">Kitchens</a></li>
-        <li><a href="interiors/interiors.html">Living & Dining</a></li>
-        <li><a href="bedrooms/bedrooms.html">Bedrooms</a></li>
-        <li><a href="mood-boards/mood-boards.html">Mood Boards</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="padding"></div>
-    <div class="slideshow-container">
-      <div
-        class="slides"
-        style="background-image: url('interiors/interiors8.jpg')"
-      >
-        <div class="dark-overlay"></div>
-        <div class="overlay">
-          <h1 class="homepage-header">Debra Grant Designs</h1>
-          <h4 class="homepage-slogan">LOVE YOUR HOME</h4>
-          <a href="debra/debra.html#form" class="contact-link">Contact Me</a>
+    <section id="welcome-section" data-aos="fade-in">
+      <h1 class="name">Alex Bow</h1>
+      <p class="tagline">Showcasing My Projects and Passion</p>
+    </section>
+    <section id="about-me">
+      <div class="about-container">
+        <div class="div-header">
+          <h2 class="about-header">ABOUT ME</h2>
+        </div>
+        <div class="about-top">
+          <p class="description">
+            My name is Alex Bow, a recent graduate from the University of
+            Richmond with a bachelor's degree in economics and a minor in
+            computer science. Since graduating in May, I have honed my coding
+            skills and built a portfolio showcasing my projects. I have a strong
+            passion for data analysis, web development, and the fintech
+            industry. My technical skills include Python, SQL, C++, Typescript,
+            R, HTML, CSS, Java, and frameworks like React, Flask, and Selenium.
+            I enjoy creating efficient user interfaces that let me tap into my
+            creative side and constantly seeking opportunities to learn and
+            grow in the tech field.
+          </p>
+          <img class="portrait" src="portrait.jpeg" alt="Portrait of Alex Bow" />
+        </div>
+        <div class="about-bottom">
+          <img class="crest" src="richmond.png" alt="Richmond Crest" />
+          <p class="description">
+            In my spare time I enjoy golfing, running, lifting weights, cooking,
+            and spending time with my family and friends. I also enjoy
+            leveraging my skills to analyze and participate in sports betting
+            markets. I'm currently looking for opportunities where I can apply
+            my skills and contribute to innovative projects. Feel free to
+            explore my projects and get in touch if you'd like to!
+          </p>
         </div>
       </div>
-      <div
-        class="slides"
-        style="background-image: url('bedrooms/bedrooms13.jpg')"
-      >
-        <div class="dark-overlay"></div>
-        <div class="overlay">
-          <h1 class="homepage-header">Debra Grant Designs</h1>
-          <h4 class="homepage-slogan">LOVE YOUR HOME</h4>
-          <a href="debra/debra.html#form" class="contact-link">Contact Me</a>
+    </section>
+    <section id="projects">
+      <div class="div-header">
+        <h2 class="projects-header">PROJECTS</h2>
+      </div>
+      <div class="projects-container">
+        <div class="project-tile">
+          <a href="https://github.com/alexbow15/bank-project">
+            <img
+              class="project-image"
+              src="Bank_api.png"
+              alt="Bank Transactions API"
+            />
+            <figcaption>Bank Transactions API</figcaption>
+            <p class="project-description">
+              Developed a full-stack banking application with React, Flask, and MySQL to manage account transactions, including deposits, withdrawals, and balance checks.
+            </a>
+        </div>
+        <div class="project-tile">
+          <a href="https://github.com/alexbow15/Apartment-Web-Scraper-">
+            <img
+              class="project-image"
+              src="NYC_apartments.png"
+              alt="Apartment Webscraper"
+            />
+            <figcaption>Apartment Webscraper</figcaption>
+            <p class="project-description">
+              Created a Python and Selenium-based web scraper to automate the extraction and analysis of apartment data from Apartments.com for New York City.
+            </p>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="http://debragrantdesigns.com/">
+            <img
+              class="project-image"
+              src="debra-grant-designs.png"
+              alt="Debra Grant Designs"
+            />
+            <figcaption>Debra Grant Designs</figcaption>
+            <p class="project-description">
+              Developed a fully responsive, static website for Debra Grant Interiors using GitHub Pages, featuring optimized images and a secure HTTPS connection, to showcase design services and projects with improved performance and user experience.
+            </p>
+          </a>
         </div>
       </div>
-      <div
-        class="slides"
-        style="background-image: url('interiors/interiors4.jpg')"
-      >
-        <div class="dark-overlay"></div>
-        <div class="overlay">
-          <h1 class="homepage-header">Debra Grant Designs</h1>
-          <h4 class="homepage-slogan">LOVE YOUR HOME</h4>
-          <a href="debra/debra.html#form" class="contact-link">Contact Me</a>
+    </section>
+
+    <section id="certifications">
+      <div class="div-header">
+        <h2 class="certifications-header">CERTIFICATIONS</h2>
+      </div>
+      <div class="certifications-container">
+        <div class="certifications-tile">
+          <a
+            href="https://freecodecamp.org/certification/fcc3dcef5aa-e207-4ce2-9983-9af9529ee636/responsive-web-design"
+          >
+            <img
+              class="certifications-image"
+              src="responsive-web-design.png"
+              alt="Responsive Web Design Certification"
+            />
+            <figcaption>Responsive Web Design Certification</figcaption>
+            <p class="certification-description">
+              In this Responsive Web Design Certification, I learned the
+              languages that developers use to build webpages: HTML for content,
+              and CSS for design.
+            </p>
+          </a>
         </div>
       </div>
-      <div
-        class="slides"
-        style="background-image: url('interiors/interiors3.jpg')"
-      >
-        <div class="dark-overlay"></div>
-        <div class="overlay">
-          <h1 class="homepage-header">Debra Grant Designs</h1>
-          <h4 class="homepage-slogan">LOVE YOUR HOME</h4>
-          <a href="debra/debra.html#form" class="contact-link">Contact Me</a>
+    </section>
+    <section id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2 class="contact-header">QUICK LINKS</h2>
+          <p>
+            <a href="mailto:alexbow315@gmail.com">Email</a>
+          </p>
+          <p><a href="tel:475-282-5294">Phone</a></p>
+          <p>
+            <a href="https://www.linkedin.com/in/alex-bow-673545234/">
+              LinkedIn</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/alexbow15">GitHub</a>
+          </p>
+        </div>
+        <div class="contact-form-container">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/meojgkay"
+            method="POST"
+          >
+            <h2 class="contact-header">CONTACT ME</h2>
+            <div class="form-group">
+              <label for="first-name">First Name:</label>
+              <input type="text" id="first-name" name="first-name" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name:</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message: </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="button-div">
+              <button id="submit" type="submit">Send Message</button>
+            </div>
+          </form>
         </div>
       </div>
-      <div
-        class="slides"
-        style="background-image: url('kitchens/kitchens2.jpg')"
-      >
-        <div class="dark-overlay"></div>
-        <div class="overlay">
-          <h1 class="homepage-header">Debra Grant Designs</h1>
-          <h4 class="homepage-slogan">LOVE YOUR HOME</h4>
-          <a href="debra/debra.html#form" class="contact-link">Contact Me</a>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <p>© 2024 Alex Bow. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#about-me">About Me</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
         </div>
-      </div>
-    </div>
-    <script src="scripts.js"></script>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/alex-bow-673545234" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+          <a href="https://github.com/alexbow15" target="_blank">
+            <i class="fab fa-github"></i>
+            <span class="sr-only">GitHub</span>
+          </a>
+        </div>
+    </footer>
   </body>
 </html>
