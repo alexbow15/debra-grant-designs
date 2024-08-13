@@ -404,8 +404,11 @@ textarea:focus {
   }
 
   #navbar ul {
+    margin: 0 10px;
     flex-wrap: nowrap;
     overflow-x: auto;
+    display: flex;
+    justify-content: flex-start;
   }
 
   #navbar::-webkit-scrollbar {
