@@ -492,6 +492,10 @@ textarea:focus {
     margin: 0 5%;
   }
 
+  .contact-text a i {
+    margin-left: 8px;
+  }
+
   .form-row {
     flex-direction: column;
     margin-bottom: 5px;
@@ -515,3 +519,4 @@ textarea:focus {
     display: none;
   }
 }
+
